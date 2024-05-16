@@ -1,3 +1,7 @@
+import forms from "@tailwindcss/forms";
+import typography from "@tailwindcss/typography";
+import aspect_ratio from "@tailwindcss/aspect-ratio";
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -29,4 +33,3 @@ export default {
   },
   plugins: [forms, typography, aspect_ratio],
 };
-
