@@ -78,7 +78,7 @@ const currentRoute = ref(null)
 
             <div class="relative flex justify-between xl:grid xl:grid-cols-12">
 
-                <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
+                <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-3">
                     <div class="flex flex-shrink-0 items-center">
                         <a href="#">
                             <img class="h-28 w-auto" src="/img/logo.png" alt="Your Company">
@@ -87,7 +87,7 @@ const currentRoute = ref(null)
                 </div>
 
 
-                <div class="ml-10 min-w-0 flex md:px-8 lg:px-0 xl:col-span-8">
+                <div class="ml-10 min-w-0 flex md:px-8 lg:px-0 xl:col-span-7">
                     <div class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0">
 
                         <nav class="relative flex w-full items-center justify-between bg-white py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start"
@@ -97,57 +97,47 @@ const currentRoute = ref(null)
                                 <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
                                     id="navbarSupportedContent2" data-twe-collapse-item>
 
-                                    <ul class="me-auto flex flex-row gap-10" data-twe-navbar-nav-ref>
+                                    <ul class="me-auto flex flex-row gap-14" data-twe-navbar-nav-ref>
 
 
 
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="border-r-4 border-black border-spacing-8 group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                class="text-center border-r-4 border-black border-spacing-8 group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                <i class="fas fa-car-burst text-primary group-hover:text-black"></i>
+                                                <i class="fas fa-home text-primary group-hover:text-black"></i>
                                                 <br>
-                                                Insurance
+                                                Home
                                             </NuxtLink>
                                         </li>
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                class="text-center border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                <i class="fas fa-people-arrows text-primary group-hover:text-black"></i>
+                                                <i class="fas fa-user-tie-hair text-primary group-hover:text-black"></i>
                                                 <br>
-                                                Reinsurance
+                                                About
                                             </NuxtLink>
                                         </li>
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                class="text-center border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                <i
-                                                    class="fas fa-square-root-variable text-primary group-hover:text-black"></i>
+                                                <i class="fas fa-address-book text-primary group-hover:text-black"></i>
                                                 <br>
-                                                Actuarial
+                                                Contact
                                             </NuxtLink>
                                         </li>
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                class="text-center group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                <i class="fas fa-microchip text-primary group-hover:text-black"></i>
+                                                <i class="fas fa-newspaper text-primary group-hover:text-black"></i>
                                                 <br>
-                                                Tech
+                                                Blogs
                                             </NuxtLink>
                                         </li>
-                                        <li data-twe-nav-item-ref>
-                                            <NuxtLink
-                                                class="group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
-                                                href="#!">
-                                                <i
-                                                    class="fas fa-money-bill-trend-up text-primary group-hover:text-black"></i>
-                                                <br>
-                                                Investment
-                                            </NuxtLink>
-                                        </li>
+
                                     </ul>
                                 </div>
                             </div>
