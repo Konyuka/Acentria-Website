@@ -72,13 +72,13 @@ const currentRoute = ref(null)
     </div>
 
 
-    <header class="bg-white shadow-sm lg:static lg:overflow-y-visible">
+    <header class="bg-white shadow-2xl lg:static lg:overflow-y-visible">
 
         <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
 
-            <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
+            <div class="relative flex justify-between xl:grid xl:grid-cols-12">
 
-                <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-4">
+                <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-2">
                     <div class="flex flex-shrink-0 items-center">
                         <a href="#">
                             <img class="h-28 w-auto" src="/img/logo.png" alt="Your Company">
@@ -87,7 +87,7 @@ const currentRoute = ref(null)
                 </div>
 
 
-                <div class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6">
+                <div class="ml-10 min-w-0 flex md:px-8 lg:px-0 xl:col-span-8">
                     <div class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0">
 
                         <nav class="relative flex w-full items-center justify-between bg-white py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start"
@@ -100,126 +100,51 @@ const currentRoute = ref(null)
                                     <ul class="me-auto flex flex-row gap-10" data-twe-navbar-nav-ref>
 
 
-                                        <li class="static" data-twe-nav-item-ref data-twe-dropdown-ref>
-                                            <button
-                                                class="group hover:scale-110 text-2xl tracking-widest flex items-center whitespace-nowrap py-2 pe-2 text-black transition duration-700 ease-in-out hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                                                href="#" type="button" id="dropdownMenuButton1"
-                                                data-twe-dropdown-toggle-ref aria-expanded="false"
-                                                data-twe-nav-link-ref>Mega menu
+
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="border-r-4 border-black border-spacing-8 group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                href="#!">
+                                                <i class="fas fa-car-burst text-primary group-hover:text-black"></i>
+                                                <br>
+                                                Insurance
+                                            </NuxtLink>
+                                        </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                href="#!">
+                                                <i class="fas fa-people-arrows text-primary group-hover:text-black"></i>
+                                                <br>
+                                                Reinsurance
+                                            </NuxtLink>
+                                        </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
+                                                href="#!">
                                                 <i
-                                                    class="mt-1 fas fa-angles-down icon-style ml-2 !text-lg group-hover:animate-bounce group-hover:text-primary group-hover:scale-90 duration-700 ease-in-out"></i>
-                                            </button>
-
-                                            <div class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding data-[twe-dropdown-show]:block dark:bg-surface-dark"
-                                                aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
-                                                <div class="px-6 py-5 lg:px-8">
-                                                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-                                                        <div>
-                                                            <p
-                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
-                                                                Lorem ipsum
-                                                            </p>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Dolor
-                                                                sit</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Amet
-                                                                consectetur</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
-                                                                justo odio</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Adipisicing
-                                                                elit</a>
-                                                        </div>
-                                                        <div>
-                                                            <p
-                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
-                                                                Explit voluptas
-                                                            </p>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Perspiciatis
-                                                                quo</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
-                                                                justo odio</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Laudantium
-                                                                maiores</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Provident
-                                                                dolor</a>
-                                                        </div>
-                                                        <div>
-                                                            <p
-                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
-                                                                Iste quaerato
-                                                            </p>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
-                                                                justo odio</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Est
-                                                                iure</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Praesentium</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Laboriosam</a>
-                                                        </div>
-                                                        <div>
-                                                            <p
-                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
-                                                                Cras justo odio
-                                                            </p>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Saepe</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Vel
-                                                                alias</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Sunt
-                                                                doloribus</a>
-                                                            <a href="#!" aria-current="true"
-                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cum
-                                                                dolores</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-
-                                        <li data-twe-nav-item-ref>
-                                            <NuxtLink
-                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                                                href="#!">
-                                                Investment
+                                                    class="fas fa-square-root-variable text-primary group-hover:text-black"></i>
+                                                <br>
+                                                Actuarial
                                             </NuxtLink>
                                         </li>
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                class="border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                Investment
+                                                <i class="fas fa-microchip text-primary group-hover:text-black"></i>
+                                                <br>
+                                                Tech
                                             </NuxtLink>
                                         </li>
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
-                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                class="group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
                                                 href="#!">
-                                                Investment
-                                            </NuxtLink>
-                                        </li>
-                                        <li data-twe-nav-item-ref>
-                                            <NuxtLink
-                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                                                href="#!">
-                                                Investment
-                                            </NuxtLink>
-                                        </li>
-                                        <li data-twe-nav-item-ref>
-                                            <NuxtLink
-                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
-                                                href="#!">
+                                                <i
+                                                    class="fas fa-money-bill-trend-up text-primary group-hover:text-black"></i>
+                                                <br>
                                                 Investment
                                             </NuxtLink>
                                         </li>
@@ -253,7 +178,7 @@ const currentRoute = ref(null)
                 </div>
 
 
-                <div class="hidden lg:flex lg:items-center lg:justify-end xl:col-span-2">
+                <div class="hidden lg:flex lg:items-center lg:justify-end xl:col-span-2 w-full">
                     <a href="#" class="button-style">
                         Get a Quote
                     </a>
