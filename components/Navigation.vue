@@ -195,6 +195,34 @@ const currentRoute = ref(null)
                                                 Investment
                                             </NuxtLink>
                                         </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#!">
+                                                Investment
+                                            </NuxtLink>
+                                        </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#!">
+                                                Investment
+                                            </NuxtLink>
+                                        </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#!">
+                                                Investment
+                                            </NuxtLink>
+                                        </li>
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#!">
+                                                Investment
+                                            </NuxtLink>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
