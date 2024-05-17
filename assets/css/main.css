@@ -1,3 +1,57 @@
+@import "@/assets/css/fontawesome-pro-6.5.1-web/css/all.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.button-style {
+    @apply hover:cursor-pointer hover:scale-90 duration-700 ease-in-out block rounded-s-sm bg-primary px-3 py-2 text-center tracking-widest font-semibold text-white hover:bg-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary
+}
+
+.icon-style {
+    @apply text-black hover:text-primary hover:cursor-pointer hover:scale-90 duration-700 ease-in-out text-3xl hover:shadow-2xl
+}
+
+.input-style {
+    @apply capitalize text-center block w-full rounded-md border-0 py-2.5 text-black shadow-xl ring-1 ring-inset ring-gray-800 focus:ring-2 focus:ring-inset focus:ring-primary sm:text-lg tracking-widest sm:leading-6
+}
+
+.label-style {
+    @apply block text-lg font-semibold leading-6 text-gray-900 tracking-widest
+}
+
+[x-cloak] {
+    display: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* border-radius: 100vh; */
+    background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(56, 178, 172);
+    background: #ed1c24;
+    /* border-radius: 100vh; */
+    /* border: 3px solid #ffffff; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

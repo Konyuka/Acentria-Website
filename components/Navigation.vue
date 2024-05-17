@@ -14,160 +14,282 @@ const currentRoute = ref(null)
 </script>
 
 <template>
-    <nav class="bg-black min-h-[120px] border-gray-200 dark:bg-gray-900 px-2">
-        <div class="max-w-screen-2xl flex-wrap hidden sm:flex justify-between mx-auto items-center px-4 pt-4">
 
-            <div class="flex gap-2">
+    <div class="flex mx-auto max-w-8xl px-8 justify-between bg-black">
 
-                <Link  type="button" data-wow-duration="3s"
-                    class="wow animate__zoomInDown border-2 border-primary hover:bg-primary hover:text-black px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Dashboard
-                </Link>
-            </div>
-
-            <div class="flex justify-between">
+        <div class="h-full justify-center content-center items-center my-auto mt-2">
+            <div class="flex justify-between my-2 gap-10">
                 <a href="tel:+254717269050"
-                    class="text-white tranform transition hover:scale-110 duration-700 ease-in-out text-md mr-10 wow animate__zoomInDown"
-                    data-wow-duration="2s">
-                    <i class="fas fa-phone-volume text-primary fa-xl mr-2"></i>
-                    +254 115 511 079
-                </a>
-                <a href="tel:+254717269050"
-                    class="text-white tranform transition hover:scale-110 duration-700 ease-in-out text-md wow animate__zoomInDown"
+                    class="text-white tranform transition hover:scale-90 duration-700 ease-in-out text-md wow animate__zoomInDown tracking-widest"
                     data-wow-duration="2.5s">
                     <i class="fas fa-envelope-dot text-primary fa-xl mr-2"></i>
-                    info@commercialkitchen.co.ke
+                    info@acentriagroup.com
+                </a>
+                <a href="tel:+254717269050"
+                    class="text-white tranform transition hover:scale-90 duration-700 ease-in-out text-md wow animate__zoomInDown tracking-widest"
+                    data-wow-duration="2s">
+                    <i class="fas fa-phone-volume text-primary fa-xl mr-2"></i>
+
+                    +254 705 200 222 or +254 731 200 999
+                </a>
+                <a target="_blank"
+                    href="https://www.google.com/maps/place/Westpark+Towers/@-1.2644631,36.8045408,17z/data=!3m1!4b1!4m16!1m9!4m8!1m0!1m6!1m2!1s0x182f176afe68fe1b:0xf590c6d95ac4594f!2sParklands+Rd,+Nairobi!2m2!1d36.8071157!2d-1.2644685!3m5!1s0x182f176afe68fe1b:0xf590c6d95ac4594f!8m2!3d-1.2644685!4d36.8071157!16s%2Fg%2F11fjfmcspn?entry=ttu"
+                    class="text-white tranform transition hover:scale-90 duration-700 ease-in-out text-md wow animate__zoomInDown tracking-widest"
+                    data-wow-duration="2s">
+                    <i class="fas fa-map-location-dot text-primary fa-xl mr-2"></i>
+
+                    9th Floor, West park Towers, Westlands, Nairobi
+                </a>
+
+
+
+            </div>
+        </div>
+
+        <div class="flex space-x-6 md:order-2">
+
+            <div class="flex gap-12 my-2 ">
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-linkedin  icon-style force_white"></i>
+                </a>
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-google icon-style force_white"></i>
+                </a>
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-facebook icon-style force_white"></i>
+                </a>
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-instagram icon-style force_white"></i>
+                </a>
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-tiktok icon-style force_white"></i>
+                </a>
+                <a href="https://www.instagram.com/commercialkitchensconsultants/" target="_blank">
+                    <i class="fab fa-youtube icon-style force_white"></i>
                 </a>
             </div>
-
         </div>
-
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
-
-            <div class="flex justify-between h-full">
-                <Link class="flex items-center mr-6 mt-2">
-                <img src="/img/logo.png" class="h-20 mr-3 wow animate__lightSpeedInLeft fadein mb-2" data-wow-duration="1s"
-                    data-wow-delay="2s" alt="Flowbite Logo" />
-                </Link>
-
-                <!-- mobile button -->
-                <button @click="openMobileMenu = !openMobileMenu" data-collapse-toggle="navbar-default" type="button"
-                    class="mt-5 bg-white inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-                <ul
-                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg  md:flex-row md:space-x-1 md:mt-0 md:border-0">
-                    <li>
-                        <Link href="/" :class="[currentRoute == '/' ? 'text-primary font-bold' : 'text-white']"
-                            data-wow-duration="2s"
-                            class="tranform transition hover:scale-125 duration-700 ease-in-out wow animate__lightSpeedInRight block py-2 pl-3 pr-4 text-xl rounded md:bg-transparent"
-                            aria-current="page">
-                        <i v-if="currentRoute == '/'" class="fas fa-caret-right"></i> Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/commercial-kitchen-services"
-                            :class="[currentRoute == '/commercial-kitchen-services' ? 'text-primary font-bold' : 'text-white']"
-                            data-wow-duration="2.5s"
-                            class="tranform transition hover:scale-125 duration-700 ease-in-out wow animate__lightSpeedInRight block py-2 pl-3 pr-4 text-xl rounded md:bg-transparent"
-                            aria-current="page">
-                        <i v-if="currentRoute == '/commercial-kitchen-services'" class="fas fa-caret-right"></i> Services
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/commercial-kitchen-about"
-                            :class="[currentRoute == '/commercial-kitchen-about' ? 'text-primary font-bold' : 'text-white']"
-                            data-wow-duration="3s"
-                            class="tranform transition hover:scale-125 duration-700 ease-in-out wow animate__lightSpeedInRight block py-2 pl-3 pr-4  text-xl rounded md:bg-transparent"
-                            aria-current="page">
-                        <i v-if="currentRoute == '/commercial-kitchen-about'" class="fas fa-caret-right"></i> Our Story
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/commercial-kitchen-media"
-                            :class="[currentRoute == '/commercial-kitchen-media' ? 'text-primary font-bold' : 'text-white']"
-                            data-wow-duration="3.5s"
-                            class="tranform transition hover:scale-125 duration-700 ease-in-out wow animate__lightSpeedInRight block py-2 pl-3 pr-4  text-xl rounded md:bg-transparent"
-                            aria-current="page">
-                        <i v-if="currentRoute == '/commercial-kitchen-media'" class="fas fa-caret-right"></i> Media
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/commercial-kitchen-contact"
-                            :class="[currentRoute == '/commercial-kitchen-contact' ? 'text-primary font-bold' : 'text-white']"
-                            class="tranform transition hover:scale-125 duration-700 ease-in-out wow animate__lightSpeedInRight block py-2 pl-3 pr-4 text-xl rounded md:bg-transparent"
-                            aria-current="page">
-                        <i v-if="currentRoute == '/commercial-kitchen-contact'" class="fas fa-caret-right"></i> Get in Touch
-                        </Link>
-                    </li>
+    </div>
 
 
+    <header class="bg-white shadow-sm lg:static lg:overflow-y-visible">
 
+        <div class="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
 
-                </ul>
-            </div>
+            <div class="relative flex justify-between lg:gap-8 xl:grid xl:grid-cols-12">
 
-            <div v-if="openMobileMenu" data-wow-duration="2s"
-                class="overflow-hidden z-[1000] sm:hidden h-screen w-screen bg-black">
-
-                <div class="grid grid-rows-5 grid-flow-col gap-5 my-20 mx-10">
-
-                    <Link href="/" type="button"
-                        :class="[currentRoute == '/' ? 'text-white bg-primary' : 'bg-white text-black']"
-                        data-wow-duration="1s"
-                        class="wow animate__lightSpeedInLeft text-center font-semibold rounded-md  px-2.5 py-1.5 text-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Home
-                    </Link>
-                    <Link href="/commercial-kitchen-services" type="button"
-                        :class="[currentRoute == '/commercial-kitchen-services' ? 'text-white bg-primary' : 'bg-white text-black']"
-                        data-wow-duration="1.3s"
-                        class="wow animate__lightSpeedInLeft text-center font-semibold rounded-md  px-2.5 py-1.5 text-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Services
-                    </Link>
-                    <Link href="/commercial-kitchen-about" type="button"
-                        :class="[currentRoute == '/commercial-kitchen-about' ? 'text-white bg-primary' : 'bg-white text-black']"
-                        data-wow-duration="1.6s"
-                        class="wow animate__lightSpeedInLeft text-center font-semibold rounded-md  px-2.5 py-1.5 text-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Our Story
-                    </Link>
-                    <Link href="/commercial-kitchen-media" type="button"
-                        :class="[currentRoute  == '/commercial-kitchen-media' ? 'text-white bg-primary' : 'bg-white text-black']"
-                        data-wow-duration="1.9s"
-                        class="wow animate__lightSpeedInLeft text-center font-semibold rounded-md  px-2.5 py-1.5 text-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Media
-                    </Link>
-                    <Link href="/commercial-kitchen-contact" type="button"
-                        :class="[currentRoute == '/commercial-kitchen-contact' ? 'text-white bg-primary' : 'bg-white text-black']"
-                        data-wow-duration="2.2s"
-                        class="wow animate__lightSpeedInLeft text-center font-semibold rounded-md  px-2.5 py-1.5 text-md shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-                    Get in Touch
-                    </Link>
-
-                </div>
-
-                <div class="mx-10 mt-10">
-                    <div class="grid grid-rows-2 grid-flow-col gap-5">
-
-                        <a href="tel:+254717269050" class="text-white text-md font-semibold">
-                            <i class="fas fa-envelope-dot text-primary fa-xl mr-2 mb-4"></i> <br>
-                            info@commercialkitchen.co.ke
-                        </a>
-                        <a href="tel:+254717269050" class="text-white text-md font-semibold">
-                            <i class="fas fa-phone-volume text-primary fa-xl mr-2 mb-4"></i> <br>
-                            +254 115 511 079
+                <div class="flex md:absolute md:inset-y-0 md:left-0 lg:static xl:col-span-4">
+                    <div class="flex flex-shrink-0 items-center">
+                        <a href="#">
+                            <img class="h-28 w-auto" src="/img/logo.png" alt="Your Company">
                         </a>
                     </div>
+                </div>
 
+
+                <div class="min-w-0 flex-1 md:px-8 lg:px-0 xl:col-span-6">
+                    <div class="flex items-center px-6 py-4 md:mx-auto md:max-w-3xl lg:mx-0 lg:max-w-none xl:px-0">
+
+                        <nav class="relative flex w-full items-center justify-between bg-white py-2 shadow-dark-mild dark:bg-neutral-700 lg:flex-wrap lg:justify-start"
+                            data-twe-navbar-ref>
+                            <div class="px-6">
+
+                                <div class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+                                    id="navbarSupportedContent2" data-twe-collapse-item>
+
+                                    <ul class="me-auto flex flex-row gap-10" data-twe-navbar-nav-ref>
+
+
+                                        <li class="static" data-twe-nav-item-ref data-twe-dropdown-ref>
+                                            <button
+                                                class="group hover:scale-110 text-2xl tracking-widest flex items-center whitespace-nowrap py-2 pe-2 text-black transition duration-700 ease-in-out hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#" type="button" id="dropdownMenuButton1"
+                                                data-twe-dropdown-toggle-ref aria-expanded="false"
+                                                data-twe-nav-link-ref>Mega menu
+                                                <i
+                                                    class="mt-1 fas fa-angles-down icon-style ml-2 !text-lg group-hover:animate-bounce group-hover:text-primary group-hover:scale-90 duration-700 ease-in-out"></i>
+                                            </button>
+
+                                            <div class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-white bg-clip-padding data-[twe-dropdown-show]:block dark:bg-surface-dark"
+                                                aria-labelledby="dropdownMenuButton1" data-twe-dropdown-menu-ref>
+                                                <div class="px-6 py-5 lg:px-8">
+                                                    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                                                        <div>
+                                                            <p
+                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
+                                                                Lorem ipsum
+                                                            </p>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Dolor
+                                                                sit</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Amet
+                                                                consectetur</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
+                                                                justo odio</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Adipisicing
+                                                                elit</a>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
+                                                                Explit voluptas
+                                                            </p>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Perspiciatis
+                                                                quo</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
+                                                                justo odio</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Laudantium
+                                                                maiores</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Provident
+                                                                dolor</a>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
+                                                                Iste quaerato
+                                                            </p>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cras
+                                                                justo odio</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Est
+                                                                iure</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Praesentium</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Laboriosam</a>
+                                                        </div>
+                                                        <div>
+                                                            <p
+                                                                class="block w-full border-b border-neutral-100 px-6 py-2 font-semibold uppercase text-neutral-700 dark:border-white/10 dark:text-white">
+                                                                Cras justo odio
+                                                            </p>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Saepe</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Vel
+                                                                alias</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Sunt
+                                                                doloribus</a>
+                                                            <a href="#!" aria-current="true"
+                                                                class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25">Cum
+                                                                dolores</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li data-twe-nav-item-ref>
+                                            <NuxtLink
+                                                class="text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                                                href="#!">
+                                                Investment
+                                            </NuxtLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+
+                <div class="flex items-center md:absolute md:inset-y-0 md:right-0 lg:hidden">
+                    <!-- Mobile menu button -->
+                    <button type="button"
+                        class="relative -mx-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                        aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open menu</span>
+
+                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+
+                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+
+                <div class="hidden lg:flex lg:items-center lg:justify-end xl:col-span-2">
+                    <a href="#" class="button-style">
+                        Get a Quote
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <nav class="lg:hidden" aria-label="Global">
+            <div class="mx-auto max-w-3xl space-y-1 px-2 pb-3 pt-2 sm:px-4">
+                <!-- Current: "bg-gray-100 text-gray-900", Default: "hover:bg-gray-50" -->
+                <a href="#" aria-current="page"
+                    class="bg-gray-100 text-gray-900 block rounded-md py-2 px-3 text-base font-medium">Dashboard</a>
+                <a href="#" class="hover:bg-gray-50 block rounded-md py-2 px-3 text-base font-medium">Calendar</a>
+                <a href="#" class="hover:bg-gray-50 block rounded-md py-2 px-3 text-base font-medium">Teams</a>
+                <a href="#" class="hover:bg-gray-50 block rounded-md py-2 px-3 text-base font-medium">Directory</a>
+            </div>
+            <div class="border-t border-gray-200 pb-3 pt-4">
+                <div class="mx-auto flex max-w-3xl items-center px-4 sm:px-6">
+                    <div class="flex-shrink-0">
+                        <img class="h-10 w-10 rounded-full"
+                            src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                            alt="">
+                    </div>
+                    <div class="ml-3">
+                        <div class="text-base font-medium text-gray-800">Chelsea Hagon</div>
+                        <div class="text-sm font-medium text-gray-500">chelsea.hagon@example.com</div>
+                    </div>
+                    <button type="button"
+                        class="relative ml-auto flex-shrink-0 rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        <span class="absolute -inset-1.5"></span>
+                        <span class="sr-only">View notifications</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mx-auto mt-3 max-w-3xl space-y-1 px-2 sm:px-4">
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Your
+                        Profile</a>
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Settings</a>
+                    <a href="#"
+                        class="block rounded-md px-3 py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900">Sign
+                        out</a>
                 </div>
             </div>
-        </div>
-</nav></template>
+        </nav>
+    </header>
+
+
+</template>
+
+<style scoped>
+.force_white {
+    color: white !important;
+}
+
+.force_white:hover {
+    color: #ed1c24 !important;
+}
+</style>
