@@ -104,7 +104,7 @@ const currentRoute = ref(null)
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
                                                 class="text-center border-r-4 border-black border-spacing-8 group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
-                                                href="#!">
+                                                to="/">
                                                 <i class="fas fa-home text-primary group-hover:text-black"></i>
                                                 <br>
                                                 Home
@@ -113,7 +113,7 @@ const currentRoute = ref(null)
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
                                                 class="text-center border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
-                                                href="#!">
+                                                to="/about">
                                                 <i class="fas fa-user-tie-hair text-primary group-hover:text-black"></i>
                                                 <br>
                                                 About
@@ -122,7 +122,7 @@ const currentRoute = ref(null)
                                         <li data-twe-nav-item-ref>
                                             <NuxtLink
                                                 class="text-center border-r-4 border-black group text-2xl tracking-widest hover:scale-110 duration-700 ease-in-out block py-2 pe-2 text-black transition hover:text-primary hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-10"
-                                                href="#!">
+                                                to="/contacts">
                                                 <i class="fas fa-address-book text-primary group-hover:text-black"></i>
                                                 <br>
                                                 Contact

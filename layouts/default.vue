@@ -19,7 +19,7 @@ const scrollToTop = () => {
 
 
 onMounted(() => {
-    new WOW().init();
+    // new WOW().init();
 });
 </script>
 

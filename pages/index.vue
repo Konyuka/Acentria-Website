@@ -1,3 +1,18 @@
+<script setup>
+import { ref } from "vue";
+
+const faq1 = ref(true)
+const faq2 = ref(false)
+const faq3 = ref(false)
+const faq4 = ref(false)
+const faq5 = ref(false)
+const faq6 = ref(false)
+const faq7 = ref(false)
+const faq8 = ref(false)
+
+</script>
+
+
 <template>
     <div>
         <Carousel />
@@ -381,41 +396,277 @@
                             <h2 class="text-2xl font-bold leading-10 tracking-tight text-gray-900">Frequently asked
                                 questions</h2>
                             <dl class="mt-10 space-y-6 divide-y divide-gray-900/10">
+
                                 <div class="pt-6">
                                     <dt>
-                                        <!-- Expand/collapse question button -->
-                                        <button type="button"
+                                        <button @click="faq1=!faq1" type="button"
                                             class="flex w-full items-start justify-between text-left text-gray-900"
                                             aria-controls="faq-0" aria-expanded="false">
-                                            <span class="text-base font-semibold leading-7">What&#039;s the best thing
-                                                about Switzerland?</span>
+                                            <span class="text-base font-semibold leading-7">
+                                                What is Acentria Group, and what services do you offer?
+                                            </span>
                                             <span class="ml-6 flex h-7 items-center">
-                                                <!--
-                  Icon when question is collapsed.
 
-                  Item expanded: "hidden", Item collapsed: ""
-                -->
-                                                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                                    stroke="currentColor" aria-hidden="true">
+                                                <svg v-if="!faq1" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
                                                         d="M12 6v12m6-6H6" />
                                                 </svg>
-                                                <!--
-                  Icon when question is expanded.
 
-                  Item expanded: "", Item collapsed: "hidden"
-                -->
-                                                <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                <svg v-if="faq1" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
                                                 </svg>
                                             </span>
                                         </button>
                                     </dt>
-                                    <dd class="mt-2 pr-12" id="faq-0">
-                                        <p class="text-base leading-7 text-gray-600">I don&#039;t know, but the flag is
-                                            a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                                            cupiditate laboriosam fugiat.</p>
+
+                                    <dd v-if="faq1" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Acentria Group is a leading financial services provider specializing in a
+                                            wide range of solutions tailored to meet our clients' needs. Our services
+                                            include insurance broking, reinsurance solutions, actuarial services,
+                                            investment strategies, and cutting-edge technology support for the insurance
+                                            industry.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq2=!faq2" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                What sets Acentria apart from other financial services providers?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq2" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq2" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq2" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Acentria stands out for its commitment to excellence, integrity, and client
+                                            satisfaction. With years of industry experience and a team of seasoned
+                                            professionals, we deliver personalized service and innovative solutions
+                                            designed to help you achieve your financial goals with confidence.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq3=!faq3" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                How do I get started with Acentria?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq3" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq3" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq3" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Getting started with Acentria is easy! Simply reach out to our team via
+                                            phone, email, or our online contact form to schedule a consultation. We'll
+                                            work with you to understand your needs and develop a customized plan to
+                                            address them effectively.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq4=!faq4" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                Is Acentria licensed and regulated?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq4" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq4" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq4" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Yes, Acentria Group operates under the necessary licenses and regulatory
+                                            guidelines to ensure compliance with industry standards and best practices.
+                                            You can trust that your financial interests are in good hands when you
+                                            partner with us.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq5=!faq5" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                Can I access my account or policy information online?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq5" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq5" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq5" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Yes, Acentria offers convenient online access for clients to manage their
+                                            accounts and access policy information. Our secure online portal allows you
+                                            to view and update your information easily, anytime, anywhere.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq6=!faq6" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                What is Acentria Group, and what services do you offer?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq6" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq6" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq6" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Absolutely! Our team of financial experts provides comprehensive investment
+                                            advice and wealth management services to help you grow and protect your
+                                            assets. We'll work with you to develop a tailored investment strategy
+                                            aligned with your financial goals and risk tolerance.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq7=!faq7" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                How can I stay informed about updates and news from Acentria?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq7" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq7" class="text-primary h-6 w-6" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq7" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            Stay connected with Acentria by subscribing to our newsletter or following
+                                            us on social media. We regularly share updates, insights, and industry news
+                                            to keep you informed and empowered to make confident financial decisions.
+                                        </p>
+                                    </dd>
+                                </div>
+                                <div class="pt-6">
+                                    <dt>
+                                        <button @click="faq8=!faq8" type="button"
+                                            class="flex w-full items-start justify-between text-left text-gray-900"
+                                            aria-controls="faq-0" aria-expanded="false">
+                                            <span class="text-base font-semibold leading-7">
+                                                How can Acentria help me with my insurance needs?
+                                            </span>
+                                            <span class="ml-6 flex h-7 items-center">
+
+                                                <svg v-if="!faq8" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M12 6v12m6-6H6" />
+                                                </svg>
+
+                                                <svg v-if="faq8" class="h-6 w-6 text-primary" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    aria-hidden="true">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12H6" />
+                                                </svg>
+                                            </span>
+                                        </button>
+                                    </dt>
+
+                                    <dd v-if="faq8" class="mt-2 pr-12" id="faq-0">
+                                        <p class="text-base leading-7 text-gray-600">
+                                            At Acentria, we leverage our expertise and industry connections to provide
+                                            you with comprehensive insurance solutions. Whether you're looking for
+                                            personal insurance coverage or seeking risk management solutions for your
+                                            business, our team is dedicated to finding the right policies to protect
+                                            what matters most to you.
+                                        </p>
                                     </dd>
                                 </div>
 
